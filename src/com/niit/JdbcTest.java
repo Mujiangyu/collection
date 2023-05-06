@@ -10,7 +10,7 @@ public class JdbcTest {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/niit","root","niit1234");
 
-        String sql = "drop table goods";
+        String sql = "create table test(id int)";
 
         Statement statement = connection.createStatement();
 
